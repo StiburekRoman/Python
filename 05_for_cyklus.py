@@ -48,19 +48,15 @@ def compare_FAMSL(data):
         
         if high_mountain < 3000:
             small_high_mountain.append(name_mountain)
-           # print(f"{name_mountain} je vysoká: {high_mountain} a patří do kategorie menších hor")
 
         elif high_mountain >= 3000 and high_mountain < 6000:
             medium_high_mountain.append(name_mountain)
-           # print(f"{name_mountain}  a patří do kategorie středních hor")
 
         elif high_mountain >= 6000 and high_mountain < 8000:
             big_high_mountain.append(name_mountain)
-           # print(f"{name_mountain}  a patří do kategorie vysové hory a výstup může být velice náročný a nebezpečný")
 
         else:
             exciting_high_mountain.append(name_mountain)
-           # print(f"{name_mountain}  a patří do té nejzajímavější kategorie. Takzvané osmitisícovky, jen pro ty zkušené a odvážné")
 
 def write_out_mountain(small, medium, big, biggest):
     print(small)
